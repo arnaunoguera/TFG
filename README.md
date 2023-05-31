@@ -4,25 +4,25 @@ This is a repository of the code I wrote and the data I obtained during my Bache
 ## Data
 This folder contains all the data used and generated during the project. 
 ### InputData
-This folder contains the original files from which the candidate regions where extracted, to showcase the heterogeneity of formats they were published in and ensure accuracy. Sources are numbered from 1-12 in no particular order, but this notation is kept throughout the analysis.
+This folder contains the original files from which the candidate regions were extracted, to showcase the heterogeneity of formats they were published in and ensure accuracy. Sources are numbered from 1-12 in no particular order, but this notation is kept throughout the analysis.
 ### StandarizedData
-This folder contains an individual CSV file for each source, corresponding to its candidate regions after standarization.
+This folder contains an individual CSV file for each source, corresponding to its candidate regions after standardization.
 ### Results
 This folder contains 2 files: 
 #### - AllData.csv
-This is merely a merged version of all the standarized data from all sources, with the addition of gene annotation. 
+This is merely a merged version of all the standardized data from all sources, with the addition of gene annotation. 
 #### - GenesData.csv
-This file consists of a table recording each individual gene's appearence in candidate regions, for the gene-based analysis performed.
+This file consists of a table recording each individual gene's appearance in candidate regions, for the gene-based analysis performed.
 ### HumanGenome.txt
 A file containing a chromosome-based description of the human genome (hg38), extracted from [NCBI](https://www.ncbi.nlm.nih.gov/genome/?term=txid9606%5borgn%5d).
 ## Scripts
 This folder contains all the R scripts used for data treatment and visualization, commented for proper understanding. 
 ### GlobalFunctions.R
-A script used for loading all required R packages and with basic functions used multiple times during the analysis, mostly for data standarization. 
+A script used for loading all required R packages and with basic functions used multiple times during the analysis, mostly for data standardization. 
 ### DataStandarization
-This folder contains an individual script for the standarization of each candidate regions source, according to their individual data format. 
+This folder contains an individual script for the standardization of each candidate regions source, according to their individual data format. 
 ### Analysis
-This folder contains the actual scripts for the post-standarization analyses. 
+This folder contains the actual scripts for the post-standardization analyses. 
 #### - JoiningData.R
 Script for data merging and gene annotation. It generates the "AllData.csv" file.
 #### - Overlaps.R
