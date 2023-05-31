@@ -14,4 +14,20 @@ This is merely a merged version of all the standarized data from all sources, wi
 #### - GenesData.csv
 This file consists of a table recording each individual gene's appearence in candidate regions, for the gene-based analysis performed.
 ### HumanGenome.txt
-A file containing a chromosome-based description of the human genome (hg38), extracted from https://www.ncbi.nlm.nih.gov/genome/?term=txid9606%5borgn%5d.
+A file containing a chromosome-based description of the human genome (hg38), extracted from [NCBI](https://www.ncbi.nlm.nih.gov/genome/?term=txid9606%5borgn%5d).
+## Scripts
+This folder contains all the R scripts used for data treatment and visualization, commented for proper understanding. 
+### GlobalFunctions.R
+A script used for loading all required R packages and with basic functions used multiple times during the analysis, mostly for data standarization. 
+### DataStandarization
+This folder contains an individual script for the standarization of each candidate regions source, according to their individual data format. 
+### Analysis
+This folder contains the actual scripts for the post-standarization analyses. 
+#### - JoiningData.R
+Script for data merging and gene annotation. It generates the "AllData.csv" file.
+#### - Overlaps.R
+Script for the gene-based analysis and the generation of the "GenesData.csv" file.
+#### - Plots.R
+Script for the generation of the different plots presented in the project, as well as some others that were ultimately not included. It also produces some of the final results, such as the correlation estimates. 
+## Renvironment.csv
+A table containing all R packages that were installed in the R environment, for proper reproducibility of the analysis. This is a result of the R function installed.packages(). 
