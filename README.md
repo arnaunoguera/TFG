@@ -9,9 +9,9 @@ This folder contains the original files from which the candidate regions where e
 This folder contains an individual CSV file for each source, corresponding to its candidate regions after standarization.
 ### Results
 This folder contains 2 files: 
-#### AllData.csv
+#### - AllData.csv
 This is merely a merged version of all the standarized data from all sources, with the addition of gene annotation. 
-#### GenesData.csv
+#### - GenesData.csv
 This file consists of a table recording each individual gene's appearence in candidate regions, for the gene-based analysis performed.
 ### HumanGenome.txt
 A file containing a chromosome-based description of the human genome (hg38), extracted from https://www.ncbi.nlm.nih.gov/genome/?term=txid9606%5borgn%5d.
